@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --animate-fadeIn: fadeIn 0.3s aese-in-out;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/MontserratAlternates-Medium.ttf") format("truetype");
+}
+
+@plugin "daisyui" {
+  themes: aqua --default;
+}
